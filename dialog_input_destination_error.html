@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Cony Jewelry</title>
+</head>
+<body>
+
+<th:block th:fragment="dialogInputDestinationError">
+	<div id="inputDestinationError" title="宛先情報入力エラー" class="hidden">
+		<div class="error familyNameError">
+		 「宛先 姓」が空欄です。
+		</div>
+		<div class="error firstNameError hidden">
+		 「宛先 名」が空欄です。
+		</div>
+		<div class="error addressError hidden">
+		 「住所」が空欄です。
+		</div>
+		<div class="error telNumberError hidden">
+		 「電話番号」が空欄です。
+		 「電話番号」に半角数字以外の文字が含まれています。
+		 「電話番号」の文字数が最小値未満です。
+		</div>
+	</div>
+</th:block>
+
+
+</body>
+</html>
